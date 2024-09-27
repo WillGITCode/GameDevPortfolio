@@ -7,11 +7,10 @@ import { FC } from "react";
 
 interface ProjectProps {
   project: Project;
-  key: string;
 }
 
-const ProjectContainer: FC<ProjectProps> = ({ project, key }) => (
-  <div key={key} className="project">
+const ProjectContainer: FC<ProjectProps> = ({ project }) => (
+  <div className="project">
     <h3>{project.name}</h3>
 
     <p className="project__description">{project.description}</p>
